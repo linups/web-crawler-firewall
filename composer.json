@@ -1,0 +1,12 @@
+{
+    "name": "linups/web-crawler-firewall",
+    "description": "Package will be responsible for baning malicious activity from website",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "linups"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
