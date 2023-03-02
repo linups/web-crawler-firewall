@@ -16,8 +16,12 @@ class CloudflareBotFirewallServiceProvider extends ServiceProvider
     {
         Route::prefix('web-crawler-firewall')
             ->as('web-crawler-firewall.')
+            ->middleware(['LinupsFirewallMiddleware'])
             ->group(function () {
                 $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
             });
+
+        $router = $this->app->make(Router::class);
+        $router->aliasMiddleware('LinupsFirewallMiddleware', LinupsFirewallMiddleware::class);
     }
 }

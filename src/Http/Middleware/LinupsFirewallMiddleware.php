@@ -4,7 +4,7 @@ namespace Linups\WebCrawlerFirewall\Http\Middleware;
 
 use Closure;
 
-class TrackingMiddleware
+class LinupsFirewallMiddleware
 {
 
 
