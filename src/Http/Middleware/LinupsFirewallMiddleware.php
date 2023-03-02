@@ -7,8 +7,6 @@ use Closure;
 class LinupsFirewallMiddleware
 {
 
-
-
     public function handle($request, Closure $next)
     {
         dump('middleware working');

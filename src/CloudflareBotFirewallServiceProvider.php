@@ -5,6 +5,7 @@ namespace Linups\WebCrawlerFirewall;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Routing\Router;
+use Linups\WebCrawlerFirewall\LinupsFirewallMiddleware;
 
 class CloudflareBotFirewallServiceProvider extends ServiceProvider
 {
