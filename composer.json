@@ -4,10 +4,22 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "linups"
+            "name": "Linas",
+            "email": "linas@hardrokas.net"
         }
     ],
     "minimum-stability": "dev",
-    "version": "0.0.1",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Linups\\WebCrawlerFirewall\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Linups\\WebCrawlerFirewall\\CloudflareBotFirewallServiceProvider"
+            ]
+        }
+    }
 }
